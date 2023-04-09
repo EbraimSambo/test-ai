@@ -1,0 +1,34 @@
+@use '../functions/functions'
+@use '../functions/variables'
+.startHome
+    background: url(../images/bg-1.jpg) no-repeat
+    background-size: cover
+    background-position: center
+    height: 100vh
+    @include functions.display(flex, center, center)
+    padding: 0 2rem
+    @include functions.mediaScreen(500px)
+        background-position: 50% center
+    .content
+        padding: 4rem
+        background:  variables.$bg-transparent
+        max-width: 700px
+        width: 100%
+        p
+            margin: 1.4rem 0
+            font-size: 1.6rem
+            font-weight: 500
+            text-shadow: variables.$text-shadow-P
+            max-width: 600px
+            width: 100%
+            line-height: 1.6
+        h2
+            font-size: 6rem
+            font-weight: bold
+            text-shadow: variables.$text-shadow-T
+            @include functions.mediaScreen(500px)
+                font-size: 4rem 
+            @include functions.mediaScreen(290px)
+                font-size: 3.4rem 
+            
+        

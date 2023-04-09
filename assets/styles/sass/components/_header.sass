@@ -1,0 +1,33 @@
+@use '../functions/variables'
+@use '../functions/functions'
+.header
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    z-index: 990
+    &-nav-links
+        padding: .7rem 2rem
+        margin: .4rem auto 0 auto
+        max-width: 820px
+        width:  100%
+        @include functions.display(flex, center, space-between)
+        @include functions.mediaScreen(768px)
+            flex-direction: column
+            justify-content: center
+            gap: 2rem
+            padding: 2rem
+        ul
+            @include functions.dGap(flex, 2rem)
+            a
+                font-size: variables.$font-size4
+                padding-bottom: .4rem
+                transition: border .7s ease
+                &:hover
+                    border-bottom: .2rem solid variables.$white
+                    @include functions.mediaScreen(428px)
+                        font-weight: bold
+                        font-size: 1.7rem
+    .btnContainer
+        @include functions.dGap(flex, 1.3rem)
+

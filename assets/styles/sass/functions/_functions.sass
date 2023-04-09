@@ -1,0 +1,12 @@
+@mixin display($display, $align, $jsty)
+    display: $display
+    align-items: $align
+    justify-content: $jsty
+@mixin dGap($ds, $gap)
+    display: $ds
+    gap: $gap
+
+@mixin mediaScreen($width)
+    @media (max-width: $width)
+        @content
+    
