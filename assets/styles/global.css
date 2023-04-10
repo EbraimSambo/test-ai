@@ -127,7 +127,7 @@ img {
 }
 @media (max-width: 500px) {
   .startHome {
-    background-position: 50% center;
+    background-position: center;
   }
 }
 .startHome .content {
